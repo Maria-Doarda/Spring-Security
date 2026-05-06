@@ -1,4 +1,7 @@
 package meufoslfnapovfhjau.demo.repositories;
 
-public interface PessoaRepository {
+import meufoslfnapovfhjau.demo.models.PessoaModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PessoaRepository extends JpaRepository<Long, PessoaModel> {
 }
