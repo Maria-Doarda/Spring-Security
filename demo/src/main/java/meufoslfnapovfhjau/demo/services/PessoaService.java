@@ -25,11 +25,11 @@ public class PessoaService {
     }
 
     public Optional<PessoaModel> buscarId(Long id){
-        return autorRepository.findById(id);
+        return pessoaRepository.findById(id);
     }
 
     public void deletar(Long id){
-        autorRepository.deleteById(id);
+        pessoaRepository.deleteById(id);
     }
 
 }
